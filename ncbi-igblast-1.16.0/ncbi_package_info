@@ -1,0 +1,48 @@
+PACKAGE_NAME: igblast
+PACKAGE_VERSION: 1.16.0
+PACKAGE_SIGNATURE: ICC_1903-ReleaseMT64--x86_64-unknown-linux3.10.0-gnu2.17-coremake22
+PACKAGE_CONFIG: Linux64-Centos : icc : ./c++/compilers/unix/ICC.sh 19.0 --with-bin-release --with-strip --without-debug --without-pcre --with-mt --with-openmp --with-flat-makefile --with-experimental=Int8GI --with-vdb=/panfs/traces01.be-md.ncbi.nlm.nih.gov/trace_software/vdb --with-static-vdb --without-gnutls --without-gcrypt --with-build-root-sfx=--Linux64-Centos-icc --with-flat-makefile --with-ncbi-public --without-ccache --without-caution --without-runpath --without-makefile-auto-update --with-projects=scripts/projects/igblast/project.lst --with-internal
+
+>>>>>  igblastp
+
+igblastp: 1.16.0
+ Package: igblast 1.16.0, build Apr 14 2020 10:24:29
+ Package-Config:  Linux64-Centos : icc : ./c++/compilers/unix/ICC.sh 19.0 --with-bin-release --with-strip --without-debug --without-pcre --with-mt --with-openmp --with-flat-makefile --with-experimental=Int8GI --with-vdb=/panfs/traces01.be-md.ncbi.nlm.nih.gov/trace_software/vdb --with-static-vdb --without-gnutls --without-gcrypt --with-build-root-sfx=--Linux64-Centos-icc --with-flat-makefile --with-ncbi-public --without-ccache --without-caution --without-runpath --without-makefile-auto-update --with-projects=scripts/projects/igblast/project.lst --with-internal
+ Build-Signature:  ICC_1903-ReleaseMT64--x86_64-unknown-linux3.10.0-gnu2.17-coremake22
+ Build-Date:  Apr 14 2020 11:00:29
+ Build-ID:  4ca08e65-e17a-48c7-ae9f-a0b20ba9e5e0
+ Subversion-Revision:  605657
+ Production-Version:  20200404
+ Built-As:  igblastp
+
+
+
+>>>>>  igblastn
+
+igblastn: 1.16.0
+ Package: igblast 1.16.0, build Apr 14 2020 10:24:29
+ Package-Config:  Linux64-Centos : icc : ./c++/compilers/unix/ICC.sh 19.0 --with-bin-release --with-strip --without-debug --without-pcre --with-mt --with-openmp --with-flat-makefile --with-experimental=Int8GI --with-vdb=/panfs/traces01.be-md.ncbi.nlm.nih.gov/trace_software/vdb --with-static-vdb --without-gnutls --without-gcrypt --with-build-root-sfx=--Linux64-Centos-icc --with-flat-makefile --with-ncbi-public --without-ccache --without-caution --without-runpath --without-makefile-auto-update --with-projects=scripts/projects/igblast/project.lst --with-internal
+ Build-Signature:  ICC_1903-ReleaseMT64--x86_64-unknown-linux3.10.0-gnu2.17-coremake22
+ Build-Date:  Apr 14 2020 11:00:14
+ Build-ID:  4ca08e65-e17a-48c7-ae9f-a0b20ba9e5e0
+ Subversion-Revision:  605657
+ Production-Version:  20200404
+ Built-As:  igblastn
+
+
+
+>>>>>  makeblastdb
+
+makeblastdb: 2.10.1+
+ Package: igblast 1.16.0, build Apr 14 2020 10:24:29
+ Package-Config:  Linux64-Centos : icc : ./c++/compilers/unix/ICC.sh 19.0 --with-bin-release --with-strip --without-debug --without-pcre --with-mt --with-openmp --with-flat-makefile --with-experimental=Int8GI --with-vdb=/panfs/traces01.be-md.ncbi.nlm.nih.gov/trace_software/vdb --with-static-vdb --without-gnutls --without-gcrypt --with-build-root-sfx=--Linux64-Centos-icc --with-flat-makefile --with-ncbi-public --without-ccache --without-caution --without-runpath --without-makefile-auto-update --with-projects=scripts/projects/igblast/project.lst --with-internal
+ Build-Signature:  ICC_1903-ReleaseMT64--x86_64-unknown-linux3.10.0-gnu2.17-coremake22
+ Build-Date:  Apr 14 2020 11:00:33
+ Build-ID:  4ca08e65-e17a-48c7-ae9f-a0b20ba9e5e0
+ Subversion-Revision:  605657
+ Production-Version:  20200404
+ Built-As:  makeblastdb
+
+
+
+
