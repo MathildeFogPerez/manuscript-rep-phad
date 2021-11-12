@@ -13,6 +13,7 @@ set -e
 #copy the files from 10X
 mkdir -p $FOLDER
 
+#Check here that the path of cell ranger output is CORRECT!
 cp $CELLRANGEROUTFOLDER/"$SAMPLE"_VDJ/outs/filtered_contig_annotations.csv $FOLDER
 cp $CELLRANGEROUTFOLDER/"$SAMPLE"_VDJ/outs/filtered_contig.fasta $FOLDER
 
