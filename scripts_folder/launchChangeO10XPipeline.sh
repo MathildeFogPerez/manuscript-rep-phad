@@ -18,7 +18,7 @@ cp $CELLRANGEROUTFOLDER/"$SAMPLE"_VDJ/outs/filtered_contig_annotations.csv $FOLD
 cp $CELLRANGEROUTFOLDER/"$SAMPLE"_VDJ/outs/filtered_contig.fasta $FOLDER
 
 cd $IGBLASTPATH
-igblastn -num_threads 50 -germline_db_V $DBPATH/"$DBSPECIES"_ig_V -germline_db_D $DBPATH/"$DBSPECIES"_ig_D  -germline_db_J $DBPATH/"$DBSPECIES"_ig_J -auxiliary_data optional_file/human_gl.aux  -ig_seqtype Ig -organism human  -outfmt '7 std qseq sseq btop'  -query $FOLDER/filtered_contig.fasta  -out $FOLDER/"$SAMPLE"_filtered_contig_igblast.fmt7
+$IGBLASTPATH/bin/igblastn -num_threads 50 -germline_db_V $DBPATH/"$DBSPECIES"_ig_V -germline_db_D $DBPATH/"$DBSPECIES"_ig_D  -germline_db_J $DBPATH/"$DBSPECIES"_ig_J -auxiliary_data optional_file/human_gl.aux  -ig_seqtype Ig -organism human  -outfmt '7 std qseq sseq btop'  -query $FOLDER/filtered_contig.fasta  -out $FOLDER/"$SAMPLE"_filtered_contig_igblast.fmt7
 
 dt=`date '+%d/%m/%Y %H:%M:%S'`
 echo "IgBlast ended, MakeDb $dt"
@@ -34,9 +34,9 @@ ParseDb.py select -d "$SAMPLE"_filtered_contig_igblast_db-pass_parse-select.tsv 
 #Add the sample name to the cell_id
 echo "Add sample name to 10XBarcode (cell_id) in heavy sequences file"
 TOADD=$SAMPLE"_"
-$SCRIPTSFOLDER/AddSampleToCellBarcode.jar $FOLDER/heavy_parse-select.tsv $TOADD
+java -jar $SCRIPTSFOLDER/AddSampleToCellBarcode.jar $FOLDER/heavy_parse-select.tsv $TOADD
 echo "Add sample name to 10XBarcode (cell_id) in light sequences file"
-$SCRIPTSFOLDER/AddSampleToCellBarcode.jar $FOLDER/light_parse-select.tsv $TOADD
+java -jar $SCRIPTSFOLDER/AddSampleToCellBarcode.jar $FOLDER/light_parse-select.tsv $TOADD
 
 #Add the sample name to the sequence_id
 sed -e "s/^/$TOADD/" heavy_parse-select_cell_id_modified.tsv | tail -n +2 > "$SAMPLE"_heavy_parse-select.tsv

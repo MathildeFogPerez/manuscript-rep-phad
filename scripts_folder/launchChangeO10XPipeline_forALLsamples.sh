@@ -7,7 +7,7 @@ DBNAME=$4 #  D1_db or D2_db or imgt_db_human_07_07_20
 DBPATH="$IGBLASTPATH/database/$4"
 RUNFILE=$5"samples.txt"
 SCRIPTSFOLDER=$6
-CELLRANGEROUTFOLDER=$7
+CELLRANGEROUTFOLDER=$8
 
 set -e
 
@@ -85,7 +85,7 @@ echo "$dt- **** Number of REMOVED heavy sequences after checking light chain $re
 
 #Remove clone_id column to be able to rerun clustering  Before was $5 in args[1]
 echo "Remove clone_id column from heavy sequences file"
-$SCRIPTSFOLDER/RemoveCloneidColumn.jar $FOLDER/all$5/all_cleaned_heavy_parse-select_clone-pass.tsv
+java -jar $SCRIPTSFOLDER/RemoveCloneidColumn.jar $FOLDER/all$5/all_cleaned_heavy_parse-select_clone-pass.tsv
 
 dt=`date '+%d/%m/%Y %H:%M:%S'`
 echo "END OF PIPELINE $dt"
