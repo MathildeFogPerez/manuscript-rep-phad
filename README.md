@@ -51,12 +51,12 @@ All the following command lines can be run in a bash script.
   
 1. Set the variables
 
-        $ SCRIPTSFOLDER="/$YOURPATH/manuscript-rep-phad/scripts_folder"
-        $ WORKINGDIR="/$YOURPATH/manuscript-rep-phad/example_files"
+        $ SCRIPTSFOLDER="$YOURPATH/manuscript-rep-phad/scripts_folder"
+        $ WORKINGDIR="$YOURPATH/manuscript-rep-phad/example_files"
         $ #cellranger_out folder should contain AT7ma_VDJ/outs/ folder with filtered_contig.fasta and filtered_contig_annotations.csv files
-        $ CELLRANGEROUTDIR="/$YOURPATH/manuscript-rep-phad/example_files/cellranger_out"
+        $ CELLRANGEROUTDIR="$YOURPATH/manuscript-rep-phad/example_files/cellranger_out"
         $ DATE="01_01_22"
-        $ IGBLAST="/$YOURPATH/manuscript-rep-phad/ncbi-igblast-1.16.0" 
+        $ IGBLAST="$YOURPATH/manuscript-rep-phad/ncbi-igblast-1.16.0" 
         $ DBSPECIES="D1" #can be D1, D2 or human
         $ DBNAME="D1_db" #can be D1_db or D2_db or imgt_db_human_07_07_20
   
