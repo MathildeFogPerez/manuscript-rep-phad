@@ -13,7 +13,7 @@ The AIRR file can be uploaded into the RepSeq platform (**LINK**) with some othe
 
 The scripts are primarily intended as reference for manuscript "Clonal structure and dynamics of human memory B cells and circulating plasma cells”" rather than a stand-alone application.
 
-The input of the pipeline are cellranger VDJ output files (filtered_contig.fasta and filtered_contig_annotations.csv files).
+The input of the pipeline are cellranger v5.0.0 VDJ output files (filtered_contig.fasta and filtered_contig_annotations.csv files).
 Data can be found at GEO db (**LINK**) and GenBank accession numbers OL450601-OL451038 for the antigenic specific mAbs.
 
 These scripts were run on Linux machines.
