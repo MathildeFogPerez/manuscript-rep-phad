@@ -14,7 +14,7 @@ The AIRR file can be uploaded into the RepSeq platform (**LINK**) with some othe
 The scripts are primarily intended as reference for manuscript "Clonal structure and dynamics of human memory B cells and circulating plasma cells”" rather than a stand-alone application.
 
 The input of the pipeline are cellranger VDJ output files (filtered_contig.fasta and filtered_contig_annotations.csv files).
-Data can be found at GEO db: (**LINK**) accession number and GenBank ids OL450601-OL451038 for the antigenic specific mAbs.
+Data can be found at GEO db (**LINK**) and GenBank accession numbers OL450601-OL451038 for the antigenic specific mAbs.
 
 These scripts were run on Linux machines.
 
@@ -43,7 +43,7 @@ f) igphyml https://igphyml.readthedocs.io/en/latest/install.html (OPTIONAL)
 
 ### PIPELINE ###
 
-Once the git directory cloned, create a directory where you will put a metadata.txt file, the samples names for each 10X run (T1samples.txt, T2samples.txt ..etc.. ) and the airr_header.txt file. You can find all files needed for donor D1 and D2 in their respective D1_files and D2_files folders. Cellranger output files can be extracted from GEO (**LINK**).
+Once the git directory is cloned, create a directory where you will put a metadata.txt file, the samples names for each 10X run (T1samples.txt, T2samples.txt ..etc.. ) and the airr_header.txt file. You can find all files needed for donor D1 and D2 in their respective D1_files and D2_files folders. Cellranger output files can be extracted from GEO (**LINK**).
 The example_files folder contains one sample from D1 donor, from T7 run with its related cell ranger output files.
 
 All the following command lines can be run in a bash script.  
@@ -85,7 +85,7 @@ All the following command lines can be run in a bash script.
         $ #Create one single file with all info + failed dnaml file
         $ java -jar $SCRIPTSFOLDER/MakeUniqueFileWithDnamlTrees.jar AIRR_file_"$DBSPECIES"_"$DATE".tsv $WORKINGDIR/dnaml
         
-5. Create igphyml phylogenic tress (OPTIONAL)
+5. Create igphyml phylogenic trees (OPTIONAL)
 
         $ mkdir igphyml
         $ #replace 0 by the correct number (see output files created in step 4: AIRR_file_"$DBSPECIES"_"$DATE"_clonalFamForIgPhyML_"$i".txt where $i is the higher number, it can be used in the case of the analysis of multiple runs)
