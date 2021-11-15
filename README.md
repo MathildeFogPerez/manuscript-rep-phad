@@ -92,3 +92,11 @@ All the following command lines can be run in a bash script.
         $ $SCRIPTSFOLDER/launchIgPhyML.sh $DATE $DBSPECIES 0 0 
         $ #Merge igphml output files in one in the case of multiple files ($i >0)
         $ $SCRIPTSFOLDER/launchMergingIgPhyMLFiles.sh $DATE $DBSPECIES 0 0 & 
+        
+ The generated AIRR_file_D1_01_01_22.tsv file can be used for AIRR format compliant software tools.
+ To explore the repertoire of the dataset (basics statics and phylogenic analysis of clonal families), you can upload into the **RepSeq platform** the following files/folder:
+      - AIRR_file_D1_01_01_22.tsv
+      - AIRR_file_D1_01_01_22_dnaml-pass.tab
+      - matrices/
+      - AIRR_file_D1_01_01_22_0_igphyml-pass.tab (OPTIONAL)
+
