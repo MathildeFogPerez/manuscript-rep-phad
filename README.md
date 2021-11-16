@@ -14,7 +14,7 @@ The AIRR file can be uploaded into the RepSeq platform (**LINK**) with some othe
 The scripts are primarily intended as reference for manuscript "Clonal structure and dynamics of human memory B cells and circulating plasma cells”" rather than a stand-alone application.
 
 The input of the pipeline are cellranger v5.0.0 VDJ output files (filtered_contig.fasta and filtered_contig_annotations.csv files).
-Data can be found at GEO db (**LINK**) and GenBank accession numbers OL450601-OL451038 for the antigenic specific mAbs.
+10X VDJ data can be found at ArrayExpress accession number E-MTAB-11174 and GenBank accession numbers OL450601-OL451038 for the antigenic specific mAbs.
 
 These scripts were run on Linux machines.
 
@@ -91,12 +91,13 @@ All the following command lines can be run in a bash script.
         $ #replace 0 by the correct number (see output files created in step 4: AIRR_file_"$DBSPECIES"_"$DATE"_clonalFamForIgPhyML_"$i".txt where $i is the higher number, it can be used in the case of the analysis of multiple runs)
         $ $SCRIPTSFOLDER/launchIgPhyML.sh $DATE $DBSPECIES 0 0 
         $ #Merge igphml output files in one in the case of multiple files ($i >0)
-        $ $SCRIPTSFOLDER/launchMergingIgPhyMLFiles.sh $DATE $DBSPECIES 0 0 & 
+        $ $SCRIPTSFOLDER/launchMergingIgPhyMLFiles.sh $DATE $DBSPECIES 0 0 
         
  The generated AIRR_file_D1_01_01_22.tsv file can be used for AIRR format compliant software tools.
- To explore the repertoire of the dataset (basics statics and phylogenic analysis of clonal families), you can upload into the **RepSeq platform** the following files/folder:
-      - AIRR_file_D1_01_01_22.tsv
-      - AIRR_file_D1_01_01_22_dnaml-pass.tab
-      - matrices/
-      - AIRR_file_D1_01_01_22_0_igphyml-pass.tab (OPTIONAL)
+ To explore the repertoire (basics statics and phylogenic analysis of clonal families), you can upload the following files/folder into the **RepSeq platform**:
+- AIRR_file_D1_01_01_22.tsv
+- AIRR_file_D1_01_01_22_dnaml-pass.tab
+- AIRR_file_D1_01_01_22_dnaml_failed_clone_ids.txt
+- matrices/
+- AIRR_file_D1_01_01_22_igphyml-pass.tab (OPTIONAL)
 
