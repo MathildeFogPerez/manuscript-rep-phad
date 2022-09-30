@@ -10,7 +10,7 @@ email: mathilde.foglierini-perez@chuv.ch
 We have made available here a series of scripts to process paired BCR data (10X genomics) coming from different donors. The 10X samples represent different time points and/or different cell types (B cell memory or plasma cells). The output of the pipeline is a single AIRR (Adaptive Immune Receptor Repertoire) file format containing one clonotype per row (heavy and light chain) and the related metadata (collection date, antigen specificity, donor etc..). 
 The AIRR file can be used for AIRR compliant software tools.
 
-The scripts are primarily intended as reference for manuscript "Clonal stability and evolution of human memory B cells and circulating plasma cells" rather than a stand-alone application.
+The scripts are primarily intended as reference for manuscript "[Clonal stability and evolution of human memory B cells and circulating plasma cells](https://www.nature.com/articles/s41590-022-01230-1)" rather than a stand-alone application.
 
 The input of the pipeline are cellranger v5.0.0 VDJ output files (filtered_contig.fasta and filtered_contig_annotations.csv files).
 10X VDJ data can be found at ArrayExpress accession number E-MTAB-11174 and GenBank accession numbers OL450601-OL451038 for the antigenic specific mAbs.
